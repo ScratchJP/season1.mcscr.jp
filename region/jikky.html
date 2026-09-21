@@ -12,7 +12,15 @@ threadURL: https://discord.com/channels/888638910589206569/1221948583222444163
   <br>概要： * input text here *</h5>
 </div>
 <script>
-let x,y,z;setInterval(()=>{x=Math.round(Math.random()*2000)-1000,y=Math.round(Math.random()*384)-64,z=Math.round(Math.random()*2000)-1000,document.getElementById("r3").textContent=`${x} ${y} ${z}`});
+const r3 = document.getElementById("r3");
+
+setInterval(() => {
+  const x = Math.round(Math.random() * 2000) - 1000;
+  const y = Math.round(Math.random() * 384) - 64;
+  const z = Math.round(Math.random() * 2000) - 1000;
+
+  r3.textContent = `${x} ${y} ${z}`;
+}, 50);
 </script>
 <div class="text-center col-lg-6 mx-auto">
 </div>
